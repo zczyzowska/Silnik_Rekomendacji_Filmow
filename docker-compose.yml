@@ -72,7 +72,7 @@ services:
       - STREAMLIT_SERVER_HEADLESS=true
       - STREAMLIT_SERVER_RUN_ON_SAVE=true
     volumes:
-      - ./notebooks:/app    # <- najważniejsze!
+      - ./notebooks:/app    
     working_dir: /app
     command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
 
